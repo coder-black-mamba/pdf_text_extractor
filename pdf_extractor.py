@@ -55,7 +55,7 @@ def main():
         extracted_text = extract_text_from_pdf(pdf_path)
         
         # Save to output file
-        output_path = os.path.join(files_dir, os.path.splitext(pdf_file)[0] + '_extracted.txt')
+        output_path ="extracted_text/" + os.path.splitext(pdf_file)[0] + '_extracted.txt'
         with open(output_path, 'w', encoding='utf-8') as f:
             f.write(extracted_text)
             
